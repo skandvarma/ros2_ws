@@ -1,24 +1,21 @@
-in this src/realsense_ros2_publisher/src/realsense_publisher.cpp change the IP 
-address accordingly to which you run the rs-server on. 
+# ros2_ws
 
-##prerquisites##
+In `src/realsense_ros2_publisher/src/realsense_publisher.cpp`, change the IP address accordingly to where you are running the `rs-server`.
 
-rs-server should be run on the remote desktop which is connected to the same network as your host PC
+## Prerequisites
 
-rs-server's SDK i.e realsense SDK compatible version is 2.53 please download and install that version of SDK
+*   `rs-server` should be running on the remote desktop which is connected to the same network as your host PC.
+*   `rs-server`'s SDK i.e. RealSense SDK compatible version is 2.53. Please download and install that version of the SDK.
 
-#brief description##
+## Brief Description
 
-What this ros2 node do is get the frames from rs-server from the same network and publish those intrinsics such as depth , aligned frames , and odometry data into ros2 topics which is accepted by the detection pipeline , RTABMAP i.e SLAM's pipeline as well as obstacle avoidance pipeline 
+This ROS2 node retrieves frames from `rs-server` within the same network and publishes intrinsics such as depth, aligned frames, and odometry data into ROS2 topics. These topics are compatible with detection pipelines, RTABMAP (SLAM's pipeline), and obstacle avoidance pipelines.
 
-Remember to run this node before you the any of the pipelines 
+Remember to run this node before starting any of the pipelines.
 
-##steps to run the package##
+## Steps to Run the Package
 
-run source source_this.sh after installing the ros2 package 
+1.  Run `source source_this.sh` after installing the ROS2 package.
+2.  Then, run `./run_realsense_receiver.sh`.
 
-and then ./run_realsense_receiver.sh 
-
-the shell script should be run after the remote computer's rs-server is running
-
-
+The shell script should be executed after the remote computer's `rs-server` is running.
