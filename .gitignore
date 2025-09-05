@@ -1,0 +1,30 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Colcon and CMake stuff
+.colcon/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+*.egg-info/
+*.pc
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.eggs/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
